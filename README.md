@@ -161,3 +161,19 @@ Output:
 </html>
 */
 ```
+
+## Intellisense Support
+
+### VS Code
+
+To make Tailwind Intellisense on VS Code recognize tw-to-css, just add the following code to your `settings.json` file:
+
+```json
+{
+  // ...
+  "tailwindCSS.experimental.classRegex": [
+    ["twj\\(\\s*[\"'`]([^\"]*)[\"'`]\\s*\\)"]
+    ]
+  // ...
+}
+```
